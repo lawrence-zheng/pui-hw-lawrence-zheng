@@ -1,0 +1,52 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+}
+
+
+.logo {
+    width: 400px;
+    padding: 30px;
+}
+
+header {
+    border-bottom: 4px solid black;
+}
+
+.navigation {
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+
+.navlink {
+    padding: 8px;
+}
+
+.selected {
+    font-weight: bold;
+    background-color: yellow;
+    width: auto;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.listing {
+    padding: 15px;
+}
+
+.thumbnail {
+    width: 200px;
+    border: 3px solid black;
+}
+
+.price {
+}
+
+.product-name {
+    text-decoration: underline;
+}
