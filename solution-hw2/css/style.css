@@ -101,7 +101,7 @@ h1 {
 
 .small {
     width: 150px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .expanded {
@@ -212,4 +212,10 @@ select {
 
 .filler {
     flex-grow: 1;
+}
+
+.thumbnail-group {
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
 }
