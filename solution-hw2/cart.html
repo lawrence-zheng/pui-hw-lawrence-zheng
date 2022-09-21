@@ -30,14 +30,19 @@
       <h1>Shopping cart</h1>
       </div>
     </header>
-    <div class = "cart">
+    <div class = "cart-display">
+      <div class = "filler"></div>
+      <div class = "cart-right">
+      <div class = "cart">
+      
 
         <div class = "cart-listing">
-    
             <img src = "assets/products/original-cinnamon-roll.jpg" class = "thumbnail small" alt= "Original Cinnamon Roll">
-            <div class = "cart-desc">Original Cinnamon Roll</div>
-            <div class = "cart-desc">Glazing: Keep original</div>
-            <div class = "cart-desc">Pack size: 1</div>
+            <div class = "cart-desc-block">
+              <div class = "cart-desc">Original Cinnamon Roll</div>
+              <div class = "cart-desc">Glazing: Keep original</div>
+              <div class = "cart-desc">Pack size: 1</div>
+            </div>
             <div class = "cart-price">$ 2.49</div>
 
     
@@ -46,17 +51,26 @@
         <div class = "cart-listing">
     
             <img src = "assets/products/double-chocolate-cinnamon-roll.jpg" class = "thumbnail small" alt= "Original Cinnamon Roll">
-            <div class = "cart-desc">Double Chocolate Cinnamon Roll</div>
-            <div class = "cart-desc">Glazing: Sugar milk</div>
-            <div class = "cart-desc">Pack size: 6</div>
+            <div class = "cart-desc-block">
+              <div class = "cart-desc">Double Chocolate Cinnamon Roll</div>
+              <div class = "cart-desc">Glazing: Sugar milk</div>
+              <div class = "cart-desc">Pack size: 6</div>
+            </div>
             <div class = "cart-price">$ 27.45</div>
 
     
         </div>
+      </div>
+      <div class = "cart-footer">
+        <div class = "cart-price" id = "total-label">Total</div>
+        <div class = "cart-price" id = "total-price">$ 29.94</div>
+      </div>
+      <div class = "cart-footer">
+        <div class = "filler"></div>
+        <div class = "button" id = "checkout"> Checkout</div>
+      </div>
     </div>
-
-    <div class = "cart-price" id = "total-price">Total: $ 29.94</div>
-    <div class = "button"> Checkout</div>
+  </div>
 
 
     <footer></footer>
