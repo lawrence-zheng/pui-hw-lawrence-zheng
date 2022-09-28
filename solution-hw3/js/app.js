@@ -77,11 +77,18 @@ function displayPackSizes() {
 function glazingChange(element) {
     const priceChange = element.value;
 
-    let selectElement = document.querySelector("#final-price");
     let price = (Number(basePrice) + Number(priceChange)) * Number(document.querySelector("#packsize").value);
-    console.log("cinnamon roll price calculation: (" + basePrice + " + " + priceChange + ") * " + document.querySelector('#packsize').value + " = " + price );
-    console.log()
-    selectElement.innertext = "$" + price;
+    //console.log("cinnamon roll price calculation: (" + basePrice + " + " + priceChange + ") * " + document.querySelector('#packsize').value + " = " + price );
+    document.getElementById("final-price").innerHTML = "$ " + price.toFixed(2);
+
+}
+
+function packSizeChange(element) {
+    const priceChange = element.value;
+
+    let price = (Number(basePrice) + Number(document.querySelector("#glazing").value)) * Number(priceChange);
+    //console.log("cinnamon roll price calculation: (" + basePrice + " + " + priceChange + ") * " + document.querySelector('#packsize').value + " = " + price );
+    document.getElementById("final-price").innerHTML = "$ " + price.toFixed(2);
 
 }
 
