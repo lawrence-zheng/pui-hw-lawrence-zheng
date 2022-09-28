@@ -1,4 +1,4 @@
-const basePrice = 2.49
+//const basePrice = 2.49
 
 let allGlazings = [
     {
