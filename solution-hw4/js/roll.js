@@ -31,6 +31,17 @@ class Roll {
 }
 
 function addBunToCart() {
-    var rollGlazing = document.querySelector("#glazing");
-    console.log(rollGlazing);
+    //getting the selected glazing
+    var rollGlazingDropdown = document.querySelector("#glazing");
+    var rollGlazing = rollGlazingDropdown.options[rollGlazingDropdown.selectedIndex].innerHTML;
+
+    //getting the selected pack size
+    var packSizeDropdown = document.querySelector("#packsize");
+    var packSize = packSizeDropdown.options[packSizeDropdown.selectedIndex].innerHTML;
+
+    //adding to cart
+    var newBunCartEntry = new Roll(rollType, rollGlazing, packSize, basePrice);
+    cart.push(newBunCartEntry);
+    console.log(cart);
+
 }
