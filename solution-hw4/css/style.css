@@ -161,6 +161,7 @@ select {
     padding: 5px;
     margin: auto;
     width: fit-content;
+    cursor: pointer;
 
 
 }

@@ -29,3 +29,8 @@ class Roll {
         this.basePrice = basePrice;
     }
 }
+
+function addBunToCart() {
+    var rollGlazing = document.querySelector("#glazing");
+    console.log(rollGlazing);
+}
