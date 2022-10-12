@@ -220,3 +220,7 @@ select {
     flex-direction: column;
     font-size: smaller;
 }
+
+.cart-remove {
+    cursor:pointer;
+}

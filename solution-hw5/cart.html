@@ -4,6 +4,8 @@
    <head>
       <title>Bun Bun Bake Shop</title>
       <link rel="stylesheet" href="css/style.css">
+      <script defer src="js/rollsData.js"></script>
+      <script defer src="js/cart.js"></script>
    </head>
    <body>
       <header>
@@ -27,32 +29,26 @@
       <div class = "cart-display">
          <div class = "filler"></div>
          <div class = "cart-right">
+
             <div class = "cart">
-               <div class = "cart-listing">
-                  <div class = "thumbnail-group">
-                     <img src = "assets/products/original-cinnamon-roll.jpg" class = "thumbnail small" alt= "Original Cinnamon Roll">
-                     Remove
+
+               <template id="cart-listing-template">
+                  <div class = "cart-listing">
+                     <div class = "thumbnail-group">
+                        <img src = "assets/products/original-cinnamon-roll.jpg" class = "thumbnail small" alt= "Original Cinnamon Roll">
+                        <div class = "cart-remove">Remove</div>
+                     </div>
+                     <div class = "cart-desc-block">
+                        <div class = "cart-desc cart-name">Original Cinnamon Roll</div>
+                        <div class = "cart-desc cart-glazing">Glazing: Keep original</div>
+                        <div class = "cart-desc cart-packsize">Pack size: 1</div>
+                     </div>
+                     <div class = "cart-price">$ 2.49</div>
                   </div>
-                  <div class = "cart-desc-block">
-                     <div class = "cart-desc">Original Cinnamon Roll</div>
-                     <div class = "cart-desc">Glazing: Keep original</div>
-                     <div class = "cart-desc">Pack size: 1</div>
-                  </div>
-                  <div class = "cart-price">$ 2.49</div>
-               </div>
-               <div class = "cart-listing">
-                  <div class = "thumbnail-group">
-                     <img src = "assets/products/double-chocolate-cinnamon-roll.jpg" class = "thumbnail small" alt= "Original Cinnamon Roll">
-                     Remove
-                  </div>
-                  <div class = "cart-desc-block">
-                     <div class = "cart-desc">Double Chocolate Cinnamon Roll</div>
-                     <div class = "cart-desc">Glazing: Sugar milk</div>
-                     <div class = "cart-desc">Pack size: 6</div>
-                  </div>
-                  <div class = "cart-price">$ 27.45</div>
-               </div>
+               </template>
+
             </div>
+
             <div class = "cart-footer">
                <div class = "cart-price" id = "total-label">Total</div>
                <div class = "cart-price" id = "total-price">$ 29.94</div>
