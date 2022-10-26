@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta charset="UTF-8">
+   <head>
+      <title>Bun Bun Bake Shop</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script defer src="js/rollsData.js"></script>
+      <script defer src="js/cart.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class = "logo">
+            <img src="assets/logo/logo-01.svg" alt="Logo of Bun Bun Bake Shop">
+         </div>
+         <div class = "header-right">
+            <div class = "navigation">
+               <div class = "navlinks">
+                  <a href = "index.html">
+                  <span class = "navlink">Products</span>
+                  </a>
+                  <a href = "cart.html">
+                  <span class = "navlink"><span class ="selected">Cart</span></span>
+                  </a>
+               </div>
+            </div>
+            <h1>Shopping cart</h1>
+         </div>
+      </header>
+      <div class = "cart-display">
+         <div class = "filler"></div>
+         <div class = "cart-right">
+
+            <div class = "cart">
+
+               <template id="cart-listing-template">
+                  <div class = "cart-listing">
+                     <div class = "thumbnail-group">
+                        <img src = "assets/products/original-cinnamon-roll.jpg" class = "thumbnail small" alt= "Original Cinnamon Roll">
+                        <div class = "cart-remove">Remove</div>
+                     </div>
+                     <div class = "cart-desc-block">
+                        <div class = "cart-desc cart-name">Original Cinnamon Roll</div>
+                        <div class = "cart-desc cart-glazing">Glazing: Keep original</div>
+                        <div class = "cart-desc cart-packsize">Pack size: 1</div>
+                     </div>
+                     <div class = "cart-price">$ 2.49</div>
+                  </div>
+               </template>
+
+            </div>
+
+            <div class = "cart-footer">
+               <div class = "cart-price" id = "total-label">Total</div>
+               <div class = "cart-price" id = "total-price">$ 29.94</div>
+            </div>
+            <div class = "cart-footer">
+               <div class = "filler"></div>
+               <div class = "button" id = "checkout"> Checkout</div>
+            </div>
+         </div>
+      </div>
+      <footer></footer>
+   </body>
+</html>
