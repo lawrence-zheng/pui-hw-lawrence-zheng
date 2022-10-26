@@ -1,4 +1,18 @@
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+
 var cart = [];
+
+if (localStorage.getItem('storedCart') != null) {
+    retrieveFromLocalStorage();
+}
 
 // getting the bun type from the URL
 const queryString = window.location.search;
@@ -21,14 +35,6 @@ document.getElementById("final-price").innerHTML = "$ " + basePrice.toFixed(2);
 //updating the image
 document.getElementById("detail-roll").src = "./assets/products/" + bunImage;
 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
 
 function addBunToCart() {
     //getting the selected glazing
@@ -44,4 +50,23 @@ function addBunToCart() {
     cart.push(newBunCartEntry);
     console.log(cart);
 
+    saveToLocalStorage();
+
+}
+
+
+function retrieveFromLocalStorage() {
+    const cartArrayString = localStorage.getItem('storedCart');
+    const cartArray = JSON.parse(cartArrayString);
+    for (const cartData of cartArray) {
+        var newBunCartEntry = new Roll(cartData.type, cartData.glazing, cartData.size, cartData.basePrice);
+        cart.push(newBunCartEntry);
+    }
+}
+
+
+function saveToLocalStorage() {
+    const cartArrayString = JSON.stringify(cart);
+    localStorage.setItem('storedCart', cartArrayString);
+    console.log("cart string: " + cartArrayString);
 }
