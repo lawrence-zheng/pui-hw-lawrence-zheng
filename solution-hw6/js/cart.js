@@ -1,4 +1,26 @@
-var cart = new Set();;
+
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+
+        this.element = null
+    }
+}
+
+
+
+var cart = [];
+
+if (localStorage.getItem('storedCart') != null) {
+    retrieveFromLocalStorage();
+}
+
+console.log(cart);
+
 var totalPrice = 0;
 
 let allGlazingPrices = {
@@ -33,28 +55,16 @@ let allPackSizePrices = {
 
 
 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
 
-        this.element = null
+function retrieveFromLocalStorage() {
+    const cartArrayString = localStorage.getItem('storedCart');
+    const cartArray = JSON.parse(cartArrayString);
+    for (const cartData of cartArray) {
+        var newBunCartEntry = new Roll(cartData.type, cartData.glazing, cartData.size, cartData.basePrice);
+        cart.push(newBunCartEntry);
     }
 }
 
-//adding the cart items specified in the homework spec
-
-function generateBun(rollType, rollGlazing, packSize) {
-    let basePrice = rolls[rollType]["basePrice"];
-    cart.add(new Roll(rollType, rollGlazing, packSize, basePrice));
-}
-
-generateBun("Original", "Sugar milk", "1");
-generateBun("Walnut", "Vanilla milk", "12");
-generateBun("Raisin", "Sugar milk", "3");
-generateBun("Apple", "Keep original", "3");
 
 const totalPriceField = document.querySelector('#total-price');
 
@@ -93,13 +103,25 @@ function createListing(listing) {
 
 function deleteListing(listing) {
     listing.element.remove();
-    cart.delete(listing);
+    const index = cart.indexOf(listing);
+    if (index > -1) {
+        cart.splice(index, 1);
+    }
 
     //ensuring total price field is updated when a listing is deleted
     totalPrice -= (Number(listing.basePrice) + Number(allGlazingPrices[listing.glazing]["glazingPrice"])) * Number(allPackSizePrices[listing.size]["packPrice"]);
     totalPriceField.innerText = "$ " + totalPrice.toFixed(2).replace('-0.00', '0.00');
+
+    //updating local storage
+    saveToLocalStorage();
+
 }
 
+function saveToLocalStorage() {
+    const cartArrayString = JSON.stringify(cart);
+    localStorage.setItem('storedCart', cartArrayString);
+    console.log(cart);
+}
 
 for (const listing of cart) {
     createListing(listing);
