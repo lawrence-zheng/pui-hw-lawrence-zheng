@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <title>Lawrence Zheng</title>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&family=Overpass:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script defer src = "js/toggleNav.js"></script>
+   </head>
+
+   <body>
+      <header>
+         <div class = "header-element section" id = "top">
+
+            <img class = "header-img" id="header-img-self" src="assets/pixel art/banner/office_coffee_self_cropped.png" alt="Pixel art image of Lawrence sitting at a coffee table">
+            <img class = "header-img" id="header-img-bg" src="assets/pixel art/banner/office_coffee_bg_cropped.png" alt="Pixel art image of coffee table" >
+
+            <div id = "intro-block">
+               <div id = "tagline-block">
+                  <div class ="title" id="name-intro">
+                     Hi, I'm Lawrence.
+                  </div>
+                  <h1 class="title" id="main-title">
+                     <div class = "title-line">I design so people </div>
+                     <div class = "title-line">can feel like they </div>
+                     <div class = "title-line"><em>belong somewhere. </em></div>
+                  </h1>
+               </div>
+
+               <div id = "jobdesc-block">
+                  <div class = "jobdesc">
+                     <div class ="time-label">
+                        Previously
+                     </div>
+                     <div class = "job-position">
+                        Advanced UX Designer at 3M | M*Modal
+                     </div>
+                  </div>
+
+                  <div id = "jobdesc-gap"></div>
+
+                  <div class = "jobdesc">
+                     <div class ="time-label">
+                        Currently attending
+                     </div>
+                     <div class = "job-position">
+                        Master of Human-Computer Interaction 
+                        <div>at Carnegie Mellon University</div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </header>
+
+      <nav>
+         <div class="navlink-container"><a class = "navlink selected" id = "navlink-home" href="index.html#top" onclick= "selectHome()">Home</a></div>
+         <div class="navlink-container"><a class = "navlink" id = "navlink-design" href="index.html#design" onclick= "selectDesign()">Design</a></div>
+         <div class="navlink-container"><a class = "navlink" href="index.html">About</a></div>
+         <div class="navlink-container"><a class = "navlink" href="pixelart.html">Pixel art</a></div>
+
+      </nav>
+
+
+      <div class = "projects section content" id = "design">
+         <div class = "projects-flex">
+            
+            <div class = "project" id = "project-mmodal">
+               <img src = "assets/project thumbnails/thumbnail-mmodal.png" class = "project-thumbnail" alt = "Thumbnail for 3M M*Modal project showing electronic medical record message">
+               <h3 class = "title project-title">Improving clinical documentation processes</h3>
+               <div class = "project-desc">
+                  How can we better support hospital staff using 3M software to create fully documented doctor's notes?
+               </div>
+            </div>
+
+            <div class = "project project-highlight" id = "project-bookstore">
+               <img src = "assets/project thumbnails/thumbnail-bookstore.png" class = "project-thumbnail" alt = "Thumbnail for microaggression prevention game project showing screenshot of gameplay">
+               <h3 class = "title project-title">Microaggression prevention game</h3>
+               <div class = "project-desc">
+                  How might we interweave learning into a video game in order to prevent microaggressions?
+               </div>
+            </div>
+
+            <div class = "project project-highlight" id = "project-mentornet">
+               <img src = "assets/project thumbnails/thumbnail-mentornet.png" class = "project-thumbnail" alt = "Thumbnail for Mentornet project showing phone screens">
+               <h3 class = "title project-title">Facilitating medical mentorship connections</h3>
+               <div class = "project-desc">
+                  How might we better facilitate mentorship connections to form in the medical field?
+               </div>
+            </div>
+
+            <div class = "project" id = "project-perch">
+               <img src = "assets/project thumbnails/thumbnail-perch.png" class = "project-thumbnail" alt = "Thumbnail for Perch Research project showing phone screens">
+               <h3 class = "title project-title">Connecting students to research opportunities</h3>
+               <div class = "project-desc">
+                  How might we allow for undergraduate college students to more easily seek out research opportunities?
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+
+      <footer class ="content">
+         <div id = "call-to-action-container">
+            <div class = "call-to-action">
+               I'd love to get coffee sometime
+            </div>
+            <div class = "call-to-action">
+               (or even better, just hang out to chat about life!)
+            </div>
+         </div>
+         <div class = "footer-link" id="footer-link-email">
+            <a href="">Email</a>
+         </div>
+         <div class = "footer-link" id="footer-link-email">
+
+            <a href="">Linkedin</a>
+         </div>
+      </footer>
+
+   </body>
+</html> 

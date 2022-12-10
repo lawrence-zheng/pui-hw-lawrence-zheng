@@ -1,0 +1,520 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Overpass, sans-serif;
+    color: rgba(37, 40, 49, 0.64);
+    background-color: #F6F6F6;
+
+}
+
+.title-line{
+    padding: 5px;
+}
+
+.title {
+    font-weight: bold;
+    color: #000000;
+    font-family: Ubuntu, sans-serif;
+}
+
+em {
+    background-color: #424F66;
+    color: #FFFFFF;
+    font-style: normal;
+    box-shadow:10px 0 0 #424F66, -10px 0 0 #424F66;
+    padding: 5px 0;
+}
+
+#name-intro {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+#jobdesc-block {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+#jobdesc-gap {
+    padding: 18px;
+}
+
+.job-position {
+    font-weight: 600;
+    color: #000000;
+}
+
+
+.header-element {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.header-img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#header-img-bg {
+    opacity: 30%;
+    z-index: -1;
+    clip-path: inset(10px 0px 90px 300px round 0px);
+}
+
+#header-img-self {
+    /* clip-path: inset(0px 15px 10px 800px); */
+    position: absolute;
+    z-index: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+#intro-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-align: right;
+    padding-left: 370px;
+    padding-top: 90px;
+    text-overflow: hidden;
+}
+
+#name-intro {
+    font-size: 27px;
+}
+
+.title-line {
+    font-size: 42px;
+    padding: 5px;
+}
+
+.navlink {
+    text-transform: lowercase;
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: #656565;
+    text-decoration: none;
+
+
+}
+
+.navlink-container {
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 260px;
+    left: 100px;
+    z-index: 3;
+    text-align: right;
+    
+}
+
+
+.selected {
+    color: #5F97B6;
+    animation-duration: 0.5s;
+    animation-name: fadeNavColor;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes fadeNavColor {
+    from {
+        color: #5F97B6;
+        opacity: 80%;
+    }
+  
+    to {
+        color: #5F97B6;
+        opacity: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    nav {
+      width: 100%;
+      height: auto;
+      position: fixed; top: 0; left: 0;
+      background-color: #5F97B6;
+      
+    }
+    nav a {float: left;}
+    div.content {margin-left: 0;}
+
+    .navlink-container {
+        padding-bottom: 0px;
+        padding-right: 10px;
+        background-color: #4d829e;
+    }
+    .navlink {
+        padding: 10px;
+        color: #d1d9e4;
+    }
+
+    .selected {
+        color: #FFFFFF;
+        animation-duration: 0.5s;
+        animation-name: fadeNavColor2;
+        animation-fill-mode: forwards;
+    }
+
+
+
+  }
+
+@keyframes fadeNavColor1 {
+    from {
+        color: #FFFFFF;
+        opacity: 80%;
+    }
+  
+    to {
+        color: #FFFFFF;
+        opacity: 100%;
+    }
+}
+
+.content {
+    padding-left: 300px;
+}
+
+.projects {
+    background-color: #F0FAFF;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+footer {
+    
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+}
+
+.footer-link > a {
+    font-weight: bold;
+    color: #AC552E;
+    font-size: 20px;
+}
+
+.footer-link {
+    padding-left: 100px;
+}
+
+.call-to-action {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#call-to-action-container {
+    width: 50%;
+}
+
+.projects-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.project-title {
+    font-size: 24px;
+}
+
+.project-desc {
+    font-size: 18px;
+}
+
+.project {
+    width: 460px;
+    background-color: #F8EBE5;
+    padding: 20px;
+    margin: 20px;
+    padding-bottom: 28px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+    
+.project:hover { 
+    box-shadow: 0 0 0 6px #F8EBE5;
+    scale: 1.01;
+}
+
+.project-highlight {
+    background-color: #EFEFE6;
+}
+
+.project-highlight:hover { 
+    box-shadow: 0 0 0 6px #EFEFE6;
+}
+
+.project-thumbnail {
+    width: 450px;
+    height: 297px;
+    margin: auto;
+}
+
+
+/* for starting animation */
+
+#intro-block {
+    animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-delay: 2s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+        padding-left: 330px;
+    }
+  
+    to {
+        opacity: 100%;
+    }
+}
+
+
+#header-img-self {
+    /* set to 800px for last value */
+    /* background: clip-path: inset(10px 0px 90px 300px); */
+    animation-duration: 2s;
+    animation-name: reveal;
+    clip-path: inset(0px 0% 10px 800px round 20px);
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes reveal {
+    from {
+        clip-path: inset(0px 80% 10px 300px);
+    }
+  
+    to {
+        clip-path: inset(0px 0% 10px 60% round 20px);
+    }
+}
+
+
+
+
+/* stuff for subpages */
+
+.subpage-header {
+
+    padding-top: 50px;
+    max-width: 60%;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+.subpage-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #3e3e3e;
+    
+}
+
+.subpage-desc-paragraph {
+    padding-bottom: 30px;
+}
+
+.gallery {
+    padding: 0 4px;
+    max-width: 80%;
+    background-color: #F0FAFF;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1200px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1200px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+@keyframes zoomGallery {
+    from {
+        scale: 1;
+    }
+  
+    to {
+        scale: 1.03;
+    }
+}
+
+
+.lightbox {
+    /* Default to hidden */
+    display: none;
+  
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* A bit of padding around image */
+    padding: 1em;
+  
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+  
+  .lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+
+
+
+  @media screen and (max-width: 1300px) {
+    #header-img-self {
+        opacity: 0;
+        animation-duration: 0.5s;
+        animation-name: fadeOut;
+        animation-fill-mode: forwards;
+        
+    }
+
+    #intro-block {
+        text-align: left;
+
+    }
+
+    #design {
+        margin-top: 200px;
+    }
+
+
+  }
+
+
+
+  @media screen and (max-width: 750px) {
+    .content {
+        padding-left: 10px;
+    }
+
+    #intro-block {
+        padding-left: 30px;
+    }
+
+    #design {
+        padding-top: 100px;
+        margin-top: 300px;
+    }
+
+    #header-img-bg {
+        clip-path: inset(0 0px 0px 0px round 0px);
+        
+    }
+
+    .project {
+        width: 400px;
+    }
+
+    .project-thumbnail {
+        width: 390px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #call-to-action-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-link {
+        padding: 30px;
+    }
+
+    .subpage-header, .gallery {
+        max-width: 95%;
+    }
+
+
+  }
+  
+
+
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+}

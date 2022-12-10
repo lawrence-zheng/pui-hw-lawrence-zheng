@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <title>Lawrence Zheng</title>
+        <!-- jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+
+
+         <!-- nanogallery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" integrity="sha512-tvpLVnZrWnnNzV2921XEMx4xkFTUF8xg3s+Mi6cvC/R7A6X1FkpBUXPJFa3Xh5uD9BvOZ2tHeYq/5ZqrweW86Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.core.min.js" integrity="sha512-olSkSzpFjxCLW5NxjyNyMn7NUUQyG6ZQPfA70fy0N9oyMbeu4AQGOmRx9RWfyXpTGfT+8gVs74X8pZBv74Im7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.data_flickr.min.js" integrity="sha512-IsQWWHHWW9njn83HRVdRS0hoRujK5huuEuoQ+bI1LTX9Urb+1k95I5sejegy08A/iswWdn5DcYfyxnG/rl6XYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.data_google3.min.js" integrity="sha512-5vvcs6JgO9U3o/I+6hOfaaM9gZMNqZTkNkHQskTbg4LGe0tefdEqIXT59PWsbo9b5IF5wfDAjWh/HsWjVhNj3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.data_nano_photos_provider2.min.js" integrity="sha512-9vbOQ9IJDMZEOWKl5J8QRYgKeE+q030UXrbGQSeWahCJVKQAx94CQF3AHUYOd8wh7jfug4OxLMd84UiidNVvAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" integrity="sha512-6sOT9zKSKq1CYgNMqtcY84tFPDnG1yX5mxwdGQiAVpAomVr2kUKJ//pFeU/KfaZDVCOru5iFOVswpT4RWWF2dQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.woff.min.css" integrity="sha512-GT2/At8/05FZdOQR449M+921uWUmhYmqiAlX3tU+PSIlVO9XA7r2W46MwZEVkGofJO9iNtrVKVLDGE5/ZM6KDA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&family=Overpass:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+
+   </head>
+
+   <body>
+      <header>
+         <div class = "subpage-header content">
+            <h2 class = "title subpage-title" id = "subpage-title-pixelart">
+               Pixel art
+            </h2>
+            <div class = "subpage-desc">
+               <div class = "subpage-desc-paragraph">
+               Like many others, I was introduced to pixel art through retro/indie video games like <i>Mario, Pokémon</i> and <i>Cave Story</i>. I was captivated by its ability to tell a story with even just a small amount of pixels. 
+               </div>
+               <div class="subpage-desc-paragraph">
+                  While creating pixel art, I enjoy how the constraints of the canvas size force me to think outside of the box about how to represent something, and how a difference in how an individual pixel is placed can make a noticeable impact on the completed art piece.
+               </div>
+            </div>
+         </div>
+
+      </header>
+        
+
+      <nav>
+         <div class="navlink-container"><a class = "navlink" id = "navlink-home" href="index.html" onclick= "selectHome()">Home</a></div>
+         <div class="navlink-container"><a class = "navlink" id = "navlink-design" href="index.html#design" onclick= "selectDesign()">Design</a></div>
+         <div class="navlink-container"><a class = "navlink" href="index.html">About</a></div>
+         <div class="navlink-container"><a class = "navlink selected" href="pixelart.html">Pixel art</a></div>
+      </nav>
+
+
+
+
+      <div class="gallery content">
+         <div id="my_nanogallery2" class = "content" data-nanogallery2 = '{
+               "thumbnailHeight":  "200 XSauto SMauto", 
+               "thumbnailWidth":   "auto XS80 SM120",
+               "thumbnailLabel":     { "valign": "bottom", "position": "onBottom", "hideIcons": true },
+               "thumbnailDisplayTransition":          "slideUp2",
+               "thumbnailDisplayTransitionDuration":  500,  
+               "thumbnailDisplayInterval":            30,   
+               "galleryDisplayTransition":            "rotateX",
+               "galleryDisplayTransitionDuration":    500  
+               
+            }'>
+            <a href="assets/pixel art/SCHENLEY FALL2.png" data-ngthumb="assets/pixel art/SCHENLEY FALL2.png">Fall scene</a>
+            <a href="assets/pixel art/evening drive.png" data-ngthumb="assets/pixel art/evening drive.png">Night drive</a>
+            
+            <a href="assets/pixel art/five spice.png" data-ngthumb="assets/pixel art/five spice.png">Five spice</a>
+            <a href="assets/pixel art/autumn bonfire.gif" data-ngthumb="assets/pixel art/autumn bonfire.gif">Autumn bonfire</a>
+            <a href="assets/pixel art/salmon don.png" data-ngthumb="assets/pixel art/salmon don.png">Salmon donburi</a>
+            <a href="assets/pixel art/comfort food2.png" data-ngthumb="assets/pixel art/comfort food2.png">Comfort food</a>
+            <a href="assets/pixel art/BEACH PIXEL 2.png" data-ngthumb="assets/pixel art/BEACH PIXEL 2.png">Beach</a>
+            <a href="assets/pixel art/ice cream sandwich.png" data-ngthumb="assets/pixel art/ice cream sandwich.png">Ice cream sandwich</a>
+            
+            <a href="assets/pixel art/pagoda pixel .png" data-ngthumb="assets/pixel art/pagoda pixel .png">Pagoda</a>
+          </div>
+       </div>
+
+      
+
+      <footer class = "content">
+         <div id = "call-to-action-container">
+            <div class = "call-to-action">
+               I'd love to get coffee sometime
+            </div>
+            <div class = "call-to-action">
+               (or even better, just hang out to chat about life!)
+            </div>
+         </div>
+         <div class = "footer-link" id="footer-link-email">
+            <a href="">Email</a>
+         </div>
+         <div class = "footer-link" id="footer-link-email">
+
+            <a href="">Linkedin</a>
+         </div>
+      </footer>
+
+   </body>
+</html> 
