@@ -138,12 +138,12 @@ nav {
 
 @keyframes fadeNavColor {
     from {
-        color: #5F97B6;
+        color: #416C8B;
         opacity: 80%;
     }
   
     to {
-        color: #5F97B6;
+        color: #416C8B;
         opacity: 100%;
     }
 }
@@ -156,7 +156,7 @@ nav {
       width: 100%;
       height: auto;
       position: fixed; top: 0; left: 0;
-      background-color: #5F97B6;
+      background-color: #416C8B;
       
     }
     nav a {float: left;}
