@@ -128,7 +128,7 @@ nav {
 
 
 .selected {
-    color: #5F97B6;
+    color: #416C8B;
     animation-duration: 0.5s;
     animation-name: fadeNavColor;
     animation-fill-mode: forwards;
@@ -151,7 +151,7 @@ nav {
 
 
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
     nav {
       width: 100%;
       height: auto;
@@ -370,7 +370,7 @@ footer {
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .column {
       flex: 50%;
       max-width: 50%;
@@ -378,7 +378,7 @@ footer {
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .column {
       flex: 100%;
       max-width: 100%;
@@ -436,7 +436,7 @@ footer {
 
 
 
-  @media screen and (max-width: 1300px) {
+  @media (max-width: 1300px) {
     #header-img-self {
         opacity: 0;
         animation-duration: 0.5s;
@@ -459,7 +459,7 @@ footer {
 
 
 
-  @media screen and (max-width: 750px) {
+  @media (max-width: 750px) {
     .content {
         padding-left: 10px;
     }
