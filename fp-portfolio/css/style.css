@@ -128,7 +128,7 @@ nav {
 
 
 .selected {
-    color: #416C8B;
+    color: #375b76;
     animation-duration: 0.5s;
     animation-name: fadeNavColor;
     animation-fill-mode: forwards;
@@ -138,12 +138,12 @@ nav {
 
 @keyframes fadeNavColor {
     from {
-        color: #416C8B;
+        color: #375b76;
         opacity: 95%;
     }
   
     to {
-        color: #416C8B;
+        color: #375b76;
         opacity: 100%;
     }
 }
