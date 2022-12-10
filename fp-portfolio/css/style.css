@@ -139,7 +139,7 @@ nav {
 @keyframes fadeNavColor {
     from {
         color: #416C8B;
-        opacity: 80%;
+        opacity: 95%;
     }
   
     to {
