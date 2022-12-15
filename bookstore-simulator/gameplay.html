@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Bookstore simulator</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css  ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/be6a96d59f.js" crossorigin="anonymous"></script>
+<script defer type = "module" src="js/booksData.js"></script>
+<script defer src="js/script.js"></script>
+
+<body>
+<div class = "main">
+
+    <div class = "gameplay-container">
+        <div class = "bookstore-name">Your bookstore</div>
+        <div class = "container-plane" id = "bookshelf-plane">
+            <span class = "location" id = "bookshelf" onclick="moveToBookshelf()">
+                BOOKSHELF
+            </span>
+        </div>
+        <div class = "container-plane" id = "protag-plane">
+            <img class = "character" id = "protag" src="assets/bookstore_protag.png">
+            <span id = "protag-status"></span>
+        </div>
+        <div class = "container-plane" id = "counter-plane">
+            <span class = "location checkout-align" id = "checkout"  onclick="moveToCheckout()">
+                CHECKOUT COUNTER
+            </span>
+            <span class = "location rec-align" id = "rec-corner" onclick="moveToRecCorner()">
+                RECOMMENDATION CORNER
+            </span>
+
+
+        </div>
+        <div class = "container-plane" id = "customer-plane">
+            <span class = "customer-spawn checkout-align" id = "checkout-customers">
+                <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
+                <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
+                <img class = "character customer checkout-customer" src="assets/temp-assets/stick-figure2.png">
+            </span>
+            <span class = "customer-spawn rec-align" id = "rec-corner-customers">
+                <img class = "character customer" id = "rec-customer" src="assets/temp-assets/stick-figure2.png">
+                <img class = "character customer" id = "rec-customer" src="assets/temp-assets/stick-figure2.png">
+            </span>
+        </div>
+
+    </div>
+    <div class = "sidebar">
+
+        <div class = "time-container">
+            <div class = "time">
+                <div class = "time-element" id = "day"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;SHIFT 3</div>
+                <div class = "time-element" id = "clock">
+                    <img class = "meter" id = "time-meter" src="assets/day night meter.png">
+                    <div class="hand time-hand"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "message-box">
+            <div class = "dialogue" id = "dialogue-box">
+                <img class = "customer-portrait" src = "assets/temp-assets/curly.png">
+                <div class = "dialogue-text">
+                "Hi, can you recommend a book for me? I really like thriller novels!"
+                <p><span class = "link dialogue-link">‣ Talk more with this customer</span></p>
+                
+                </div>
+            </div>
+            <div class = "dialogue" id = "bookshelf-box">
+                <div class = "dialogue-text" id = "bookshelf-list">
+                    <p>Recommend a book from the bookshelf:</p>
+                    <template id="book-listing-template">
+                        <div class = "book-listing">
+                            <img src = "assets/temp-assets/book.jpeg" class = "icon">
+                            <span class = "book-listing-text">Title</span>
+                            <div class = 'book-tooltip'>
+                                <div class = "book book-name">Book name</div>
+                                <div class = "book book-desc">Book description</div>
+                                <div class = "book book-price">Book price</div>
+                            </div>
+                        </div>
+                     </template>
+      
+
+
+                </div>
+            </div>
+            <div class = "dialogue" id = "checkout-box">
+                <div class = "dialogue-text" id = "checkout-link" onclick="checkout1()">
+                   Click the counter to checkout
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+[
+ {
+   "ID": 1,
+   "title": "Sea of Monsters",
+   "description": "An adventure novel about a young hero battling mythical creatures",
+   "size": "medium",
+   "color": "",
+   "money": 10,
+   "default": true
+ },
+ {
+   "ID": 2,
+   "title": "Hearty Dinners",
+   "description": "A cookbook containing recipes from many different cultures, written by celebrity chef Gordino Ramsee",
+   "size": "large",
+   "color": "",
+   "money": 15,
+   "default": true
+ },
+ {
+   "ID": 3,
+   "title": "Rosaline",
+   "description": "A semi autobiographical novel about famous actress and model Rosaline, detailing aspects of her love life and depression",
+   "size": "medium",
+   "color": "",
+   "money": 15,
+   "default": true
+ },
+ {
+   "ID": 4,
+   "title": "Vampire Moon",
+   "description": "A young adult novel, presenting the steamy romance between a young girl and a dark, brooding vampire",
+   "size": "medium",
+   "color": "",
+   "money": 10,
+   "default": true
+ },
+ {
+   "ID": 5,
+   "title": "Agent 070",
+   "description": "A spy infiltrates a criminal syndicate, using his quick wit and handy grappling hook to get out of sticky situations",
+   "size": "medium",
+   "color": "",
+   "money": 10,
+   "default": true
+ },
+ {
+   "ID": 6,
+   "title": "Girl Meets Girl",
+   "description": "An LGBTQ+ romance graphic novel where a small-town girl falls hopeleslly in love with the girl who sits next to her in art class",
+   "size": "large",
+   "color": "",
+   "money": 20,
+   "default": true
+ },
+ {
+   "ID": 7,
+   "title": "Top 10 Tips to Score a Hot Date",
+   "description": "A magazine giving makeup tips and fashion advice",
+   "size": "magazine",
+   "color": "",
+   "money": 5,
+   "default": true
+ },
+ {
+   "ID": 8,
+   "title": "Data Visualization for Dum-Dums",
+   "description": "A textbook giving easy to understand explanations of how to get started with data visuallization",
+   "size": "large",
+   "color": "",
+   "money": 20,
+   "default": true
+ },
+ {
+   "ID": 9,
+   "title": "Equality and Equity",
+   "description": "A book about social justice and the struggles of various ethnic groups to get to where they are today",
+   "size": "medium",
+   "color": "",
+   "money": 15,
+   "default": false
+ },
+ {
+   "ID": 10,
+   "title": "Call of Amogus: Official Strategy Guide",
+   "description": "A strategy guide with hints and secret cheat codes for hit video game Call of Amogus, popular with younger audiences",
+   "size": "small",
+   "color": "",
+   "money": 10,
+   "default": false
+ },
+ {
+   "ID": 11,
+   "title": "The Adventures of Mega Zero",
+   "description": "An action-packed superhero comic featuring the cool superhero ranger Mega Zero, which was recently adapted into a movie",
+   "size": "medium",
+   "color": "",
+   "money": 10,
+   "default": false
+ },
+ {
+   "ID": 12,
+   "title": "Floral Fascination",
+   "description": "A book about different types of flowers, flower arranging, and floral arts & crafts",
+   "size": "small",
+   "color": "",
+   "money": 10,
+   "default": false
+ },
+ {
+   "ID": 13,
+   "title": "Practical English Speaking",
+   "description": "A standard reference book aimed at foreign learners of English, giivng examples of proper grammar for everyday conversations",
+   "size": "large",
+   "color": "",
+   "money": 20,
+   "default": false
+ },
+ {
+   "ID": 14,
+   "title": "Tattoo Removal At Home",
+   "description": "A book about how to remove unwanted tattoos in the comfort of your home, for those with unfortunate tattoo choices",
+   "size": "large",
+   "color": "",
+   "money": 15,
+   "default": false
+ },
+ {
+   "ID": 15,
+   "title": "Faith, Healing and Spirituality",
+   "description": "A book about the power of prayer and how faith can inspire hope even in the darkest moments of one's life",
+   "size": "medium",
+   "color": "",
+   "money": 20,
+   "default": false
+ },
+ {
+   "ID": 16,
+   "title": "The Ultimate Guide to Getting Swole ",
+   "description": "A book about weightlifting and the optimal diet for gaining muscle fast",
+   "size": "large",
+   "color": "",
+   "money": 20,
+   "default": false
+ }
+]

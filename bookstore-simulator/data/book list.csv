@@ -1,0 +1,17 @@
+ID,title,description,size,color,money,default?
+1,Sea of Monsters,An adventure novel about a young hero battling mythical creatures,medium,,10,TRUE
+2,Hearty Dinners,"A cookbook containing recipes from many different cultures, written by celebrity chef Gordino Ramsee",large,,15,TRUE
+3,Rosaline,"A semi autobiographical novel about famous actress and model Rosaline, detailing aspects of her love life and depression",medium,,15,TRUE
+4,Vampire Moon,"A young adult novel, presenting the steamy romance between a young girl and a dark, brooding vampire",medium,,10,TRUE
+5,Agent 070,"A spy infiltrates a criminal syndicate, using his quick wit and handy grappling hook to get out of sticky situations",medium,,10,TRUE
+6,Girl Meets Girl,An LGBTQ+ romance graphic novel where a small-town girl falls hopeleslly in love with the girl who sits next to her in art class,large,,20,TRUE
+7,Top 10 Tips to Score a Hot Date,A magazine giving makeup tips and fashion advice,magazine,,5,TRUE
+8,Data Visualization for Dum-Dums,A textbook giving easy to understand explanations of how to get started with data visuallization,large,,20,TRUE
+9,Equality and Equity,A book about social justice and the struggles of various ethnic groups to get to where they are today,medium,,15,FALSE
+10,Call of Amogus: Official Strategy Guide,"A strategy guide with hints and secret cheat codes for hit video game Call of Amogus, popular with younger audiences",small,,10,FALSE
+11,The Adventures of Mega Zero,"An action-packed superhero comic featuring the cool superhero ranger Mega Zero, which was recently adapted into a movie",medium,,10,FALSE
+12,Floral Fascination,"A book about different types of flowers, flower arranging, and floral arts & crafts",small,,10,FALSE
+13,Practical English Speaking,"A standard reference book aimed at foreign learners of English, giivng examples of proper grammar for everyday conversations",large,,20,FALSE
+14,Tattoo Removal At Home,"A book about how to remove unwanted tattoos in the comfort of your home, for those with unfortunate tattoo choices",large,,15,FALSE
+15,"Faith, Healing and Spirituality",A book about the power of prayer and how faith can inspire hope even in the darkest moments of one's life,medium,,20,FALSE
+16,The Ultimate Guide to Getting Swole ,A book about weightlifting and the optimal diet for gaining muscle fast,large,,20,FALSE
